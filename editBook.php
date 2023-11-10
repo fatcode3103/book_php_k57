@@ -9,7 +9,7 @@
 <body>
     <?php
         include("./connectDB.php");
-
+        /// get book data from database
         if (isset($_GET['bookId'])) {
             $bookId = $_GET['bookId'];
 
