@@ -8,11 +8,7 @@
 </head>
 <body>
     <!-- connect database -->
-    <?php include 'connectDB.php';
-        
-    ?>
-
-
+    <?php include 'connectDB.php';?>
     <div class="app">
         <!-- form -->
         <form action="./addBook.php" method="POST">

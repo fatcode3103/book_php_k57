@@ -31,6 +31,4 @@
     };
 
     $allBook = getBooksData($conn);
-    // 
-    $conn->close();
 ?>
