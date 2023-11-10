@@ -60,6 +60,7 @@
                     <th>Nhà xuất bản</th>
                     <th>Giá</th>
                     <th>Thể loại</th>
+                    <th>Hành động</th>
                 </tr>
                     <?php
                         if (!empty($allBook)) {
@@ -74,6 +75,7 @@
                                     echo "<td>{$book['nhaxuatban']}</td>";
                                     echo "<td>{$book['gia']}</td>";
                                     echo "<td>{$book['theloai']}</td>";
+                                    echo "<td class='btn-edit'><a href='editBook.php?bookId={$book['masach']}'>Edit</a></td>";
                                     echo "</tr>";
                                 }
                         } else {

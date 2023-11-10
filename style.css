@@ -12,6 +12,12 @@ body {
     padding: 10px;
 }
 
+.btn-edit {
+    color: red;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
 form {
     display: flex;
     flex-direction: column;

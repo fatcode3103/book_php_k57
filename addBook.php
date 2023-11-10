@@ -17,6 +17,7 @@
         } else {
             echo "Lỗi khi thêm sách: " . $conn->error;
         }
+        $conn->close();
     }
 
     handleAddBook($conn)
