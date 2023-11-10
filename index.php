@@ -35,7 +35,16 @@
             <div class="info-item">
                 <label>Thể loại</label>
                 <select name="genre">
-                    <option>dsakjld</option>
+                    <option hidden selected>Chọn thể loại</option>
+                    <?php
+                        if(!empty($allGenre)){
+                            foreach ($allGenre as $genre) {
+                                echo "<option>{$genre['tenloai']}</option>";
+                            }
+                        }else{
+                            echo "Genre is empty !";
+                        }
+                    ?>
                 </select>
             </div>
             <button type="submit">Thêm mới</button>

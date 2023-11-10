@@ -30,5 +30,22 @@
         return $books;
     };
 
+    function getAllGenre($conn) {
+        global $conn;
+
+        $sqlGetAllGenre = "SELECT tenloai FROM loaisach";
+        $resAllGenre = $conn->query($sqlGetAllGenre);
+        $genres = [];
+
+        if ($resAllGenre->num_rows > 0) {
+            while ($row = $resAllGenre->fetch_assoc()) {
+                $genres[] = $row;
+            }
+        }
+
+        return $genres;
+    };
+
     $allBook = getBooksData($conn);
+    $allGenre = getAllGenre($conn);
 ?>
