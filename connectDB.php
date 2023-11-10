@@ -15,8 +15,6 @@
 
 
     function getBooksData($conn) {
-        global $conn;
-
         $sqlGetAllBook = "SELECT * FROM sach";
         $resAllBook = $conn->query($sqlGetAllBook);
         $books = [];
@@ -31,8 +29,6 @@
     };
 
     function getAllGenre($conn) {
-        global $conn;
-
         $sqlGetAllGenre = "SELECT tenloai FROM loaisach";
         $resAllGenre = $conn->query($sqlGetAllGenre);
         $genres = [];
